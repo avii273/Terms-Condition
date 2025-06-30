@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0f172a;
+            --accent: #f97316;
+            --light-bg: #f8fafc;
+            --border: #e2e8f0;
+            --text: #334155;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .effective-date {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .terms-container {
+            padding: 40px;
+        }
+        
+        .term-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px dashed var(--border);
+            position: relative;
+        }
+        
+        .term-section:last-child {
+            border-bottom: none;
+        }
+        
+        .term-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .term-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--secondary);
+        }
+        
+        .term-content p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .policy-highlight {
+            background: var(--light-bg);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fffbeb;
+            border-left: 4px solid var(--warning);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .warning-icon {
+            color: var(--warning);
+            font-size: 1.5rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        .icon-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .icon-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .icon-list i {
+            margin-right: 10px;
+            margin-top: 5px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .conclusion {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+            border: 1px solid var(--border);
+        }
+        
+        .conclusion p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        
+        .footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .terms-container {
+                padding: 30px 20px;
+            }
+            
+            .term-section {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h1>Terms & Conditions</h1>
+            <div class="effective-date">Effective Date: June 30, 2025</div>
+            <p class="intro">Welcome to the Service Portal ! By accessing or purchasing our services, you agree to the terms below. These rules are designed to protect both the users and the system fairly.</p>
+        </header>
+        
+        <div class="terms-container">
+            <!-- Section 1 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">1</div>
+                    <h2>Access Key & Receipt Policy</h2>
+                </div>
+                <div class="term-content">
+                    <p>After confirming your payment, we will provide your Access Key and a Digital Receipt.</p>
+                    <p>The receipt is your official proof of purchase and acts as your warranty.</p>
+                    <p>If you lose your Access Key, contact us with your receipt, and we'll issue a replacement key.</p>
+                    <div class="warning-box">
+                        <div class="warning-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div>
+                            <strong>No recovery is possible without a valid receipt.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section 2 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">2</div>
+                    <h2>Access Key Confidentiality & Ban Policy</h2>
+                </div>
+                <div class="term-content">
+                    <p>Your Access Key is for your personal use only.</p>
+                    <p>Do NOT share, resell, or give your key to others.</p>
+                    <p>If we detect that your Access Key is being used by others:</p>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-ban"></i> Your access will be permanently banned</li>
+                        <li><i class="fas fa-times-circle"></i> You will not be eligible for a new key, even with a receipt</li>
+                        <li><i class="fas fa-shopping-cart"></i> You will need to buy a new license to use our services again</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Section 3 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">3</div>
+                    <h2>Key Replacement Policy (No Refunds)</h2>
+                </div>
+                <div class="term-content">
+                    <p>We do NOT provide refunds under any condition.</p>
+                    <p>However, if your Access Key:</p>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-times" style="color: var(--danger)"></i> Fails to work properly</li>
+                        <li><i class="fas fa-cog" style="color: var(--warning)"></i> Is affected due to a technical or system error</li>
+                    </ul>
+                    <p>Then we will issue a new Access Key at no extra cost, after verifying the issue.</p>
+                    <div class="policy-highlight">
+                        <p><i class="fas fa-info-circle"></i> You must provide your receipt when requesting a replacement key.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section 4 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">4</div>
+                    <h2>Payment Confirmation</h2>
+                </div>
+                <div class="term-content">
+                    <p>Access Keys are only issued after payment is verified.</p>
+                    <p>You will receive an official Digital Receipt once the transaction is confirmed.</p>
+                    <p>This receipt is the only way to prove your purchase for future support.</p>
+                </div>
+            </div>
+            
+            <!-- Section 5 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">5</div>
+                    <h2>Fair Use & Abuse Protection</h2>
+                </div>
+                <div class="term-content">
+                    <p>Each Access Key is assigned to one individual only.</p>
+                    <p>Any attempts to bypass, duplicate, or manipulate the system will result in:</p>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-ban" style="color: var(--danger)"></i> Immediate suspension</li>
+                        <li><i class="fas fa-lock" style="color: var(--danger)"></i> Permanent ban</li>
+                        <li><i class="fas fa-times" style="color: var(--danger)"></i> No future support or replacement allowed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Section 6 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">6</div>
+                    <h2>System Updates</h2>
+                </div>
+                <div class="term-content">
+                    <p>We reserve the right to modify services, features, or pricing at any time.</p>
+                    <p>Changes will be announced on our website or through official communication.</p>
+                </div>
+            </div>
+            
+            <!-- Section 7 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">7</div>
+                    <h2>Support & Contact</h2>
+                </div>
+                <div class="term-content">
+                    <p>For assistance, key replacement, or any issues, contact us through our official support channel.</p>
+                    <p>Please always include your receipt and explanation of the problem.</p>
+                </div>
+            </div>
+            
+            <!-- Section 8 -->
+            <div class="term-section">
+                <div class="term-header">
+                    <div class="term-number">8</div>
+                    <h2>Legal & Ownership</h2>
+                </div>
+                <div class="term-content">
+                    <p>All tools, content, and systems belong to Leverage Master Pro and are protected by intellectual property laws.</p>
+                    <p>Unauthorized use or redistribution will result in legal action.</p>
+                </div>
+            </div>
+            
+            <div class="conclusion">
+                <p>By using our services, you accept these terms. If you disagree, please do not continue.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 All rights reserved.</p>
+            <p>For any inquiries, please contact our <a href="#">support team</a></p>
+        </div>
+    </div>
+</body>
+  </html>
